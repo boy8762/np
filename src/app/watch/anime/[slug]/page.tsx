@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect } from 'react';
 import EmbedPlayer from '@/components/watch/embed-player';
 import { MediaType } from '@/types';
@@ -14,7 +16,6 @@ export default function Page({ params }: { params: { slug: string } }) {
       const history = JSON.parse(localStorage.getItem('watchHistory') || '[]');
       const newEntry = { id, type, date: new Date().toISOString() };
 
-      // Avoid duplicate entries
       const updatedHistory = history.filter((item: any) => item.id !== id);
       updatedHistory.unshift(newEntry);
 
