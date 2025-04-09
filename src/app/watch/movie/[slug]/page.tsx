@@ -63,6 +63,7 @@ const WatchMoviePage: React.FC = () => {
 
   // List of embed API providers with custom names
   const embedSources = [
+    { name: "Netprime Server 1 { Own Server }", url: `https://letsembed.cc/embed/movie/?id=${id}` },
     { name: "Netprime Server 1 {Multi }", url: `https://vidzee.wtf/movie/multi.php?id=${id}` },
     { name: "Netprime Server 2", url: `https://api.flixindia.site/movie/${id}` },
     { name: "Netprime Server 3", url: `https://iframe.pstream.org/media/tmdb-movie-${id}` },
