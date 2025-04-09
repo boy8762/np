@@ -203,3 +203,24 @@ export function getRandomShow(allShows: CategorizedShows[]): Show | null {
       : null;
   return randomShow;
 }
+
+export const getDownloadLinks = (
+  type: 'movie' | 'tv',
+  id: string,
+  season?: number,
+  episode?: number
+): string[] => {
+  if (type === 'movie') {
+    return [
+      `http://dl.vidzee.wtf/download/movie/v1/${id}`,
+      `http://dl.vidzee.wtf/download/movie/v2/${id}`,
+      `http://dl.vidzee.wtf/download/movie/v3/${id}`,
+    ];
+  } else if (type === 'tv' && season !== undefined && episode !== undefined) {
+    return [
+      `http://dl.vidzee.wtf/download/tv/v1/${id}/${season}/${episode}`,
+      // Add more servers if needed
+    ];
+  }
+  return [];
+};
