@@ -32,6 +32,18 @@ module.exports = {
       center: true,
       padding: "4vw",
       screens: {
+
+
+        module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#ff4b4b', // Reddish
+        secondary: '#4b6cff', // Bluish
+      }
+    }
+  }
+}
         "2xl": "1400px",
       },
     },
