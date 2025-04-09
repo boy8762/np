@@ -79,6 +79,9 @@ const WatchMoviePage: React.FC = () => {
     { name: "Netprime Server 13", url: `https://vidsrc.me/embed/movie/${id}` },
     { name: "Netprime Server 14", url: `https://multiembed.mov/?video_id=${id}&tmdb=1` },
     { name: "Netprime Server 15", url: `https://2embed.cc/embed/${id}` },
+    { name: "Netprime Server 16", url: `https://moviesapi.to/movie/${id}` },
+    { name: "Netprime Server 17", url: `https://filmku.stream/embed/${id}` },
+    { name: "Netprime Server 18", url: `https://vidsrc.wtf/api/3/movie/?id=${id}` },
   ];
 
   const handleEmbedError = () => {
