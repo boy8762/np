@@ -27,7 +27,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     <EmbedPlayer
       movieId={movieId}
       mediaType={movieId?.includes('t') ? MediaType.ANIME : undefined}
-      url={`https://vidsrc.cc/v2/embed/anime/tmdb${id}/1/sub?autoPlay=false`}
+      url={`https://vidzee.wtf/tv/?id=${id}/${selectedSeason}/${episode}`}
     />
   );
 }
