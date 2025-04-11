@@ -346,3 +346,8 @@ body,
     transform: rotate(360deg);
   }
 }
+
+
+{
+  color: red; // <- This is not valid CSS
+}
